@@ -12,7 +12,7 @@ github_repo: "https://github.com/LeeeLiu/LeeeLiu.github.io.git" # you code repos
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "Live towards death"
-sidebar-avatar: /img/ali.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/lion.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 

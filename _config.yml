@@ -1,13 +1,13 @@
 # Site settings
-title: Lily's Blog
-SEOTitle: Hello | Lily's Blog
+title: LT's Blog
+SEOTitle: Hello | LT's Blog
 header-img: img/me.jpg
 email: lily516@foxmail.com
 description: "向死而生。"
 keyword: "LT,blog"
-url: "https://LiuLilyLily.github.io/"          # your host, for absolute URL
+url: "https://LeeeLiu.github.io/"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/LiuLilyLily/LiuLilyLily.github.io.git" # you code repository
+github_repo: "https://github.com/LeeeLiu/LeeeLiu.github.io.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
@@ -19,7 +19,7 @@ sidebar-avatar: /img/cloud.jpg      # use absolute URL, seeing it's used in both
 # SNS settings
 RSS: false
 zhihu_username:     lily-84-94-19
-github_username:    LiuLilyLily
+github_username:    LeeeLiu
 
 
 # Build settings
@@ -56,9 +56,9 @@ gitalk:
   enable: true    #是否开启Gitalk评论
   clientID: f6f79814a323ade1738b                            #生成的clientID
   clientSecret: c7732dad1ba370ce8f173ac1fba1a5716219cbbb    #生成的clientSecret
-  repo: LiuLilyLily.github.io    #仓库名称
-  owner: LiuLilyLily    #github用户名
-  admin: LiuLilyLily
+  repo: LeeeLiu.github.io    #仓库名称
+  owner: LeeeLiu    #github用户名
+  admin: LeeeLiu
   distractionFreeMode: true #是否启用类似FB的阴影遮罩
 
 

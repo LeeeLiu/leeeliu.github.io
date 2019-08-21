@@ -54,8 +54,8 @@ kramdown:
 # Gitalk
 gitalk:
   enable: true    #是否开启Gitalk评论
-  clientID: f6f79814a323ade1738b                            #生成的clientID
-  clientSecret: c7732dad1ba370ce8f173ac1fba1a5716219cbbb    #生成的clientSecret
+  clientID: 83a6bd7127310810fc70                            #生成的clientID
+  clientSecret: 127e73f95264c0ad119df0188b6484b81b1a7f9f    #生成的clientSecret
   repo: LeeeLiu.github.io    #仓库名称
   owner: LeeeLiu    #github用户名
   admin: LeeeLiu

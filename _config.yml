@@ -1,0 +1,89 @@
+# Site settings
+title: Lily's Blog
+SEOTitle: Hello | Lily's Blog
+header-img: img/me.jpg
+email: lily516@foxmail.com
+description: "向死而生。"
+keyword: "LT,blog"
+url: "https://LiuLilyLily.github.io/"          # your host, for absolute URL
+baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
+github_repo: "https://github.com/LiuLilyLily/LiuLilyLily.github.io.git" # you code repository
+
+# Sidebar settings
+sidebar: true                           # whether or not using Sidebar.
+sidebar-about-description: "Live towards death"
+sidebar-avatar: /img/cloud.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+
+
+
+# SNS settings
+RSS: false
+zhihu_username:     lily-84-94-19
+github_username:    LiuLilyLily
+
+
+# Build settings
+# from 2016, 'pygments' is unsupported on GitHub Pages. Use 'rouge' for highlighting instead.
+permalink: pretty
+paginate: 10
+exclude: ["less","node_modules","Gruntfile.js","package.json","README.md"]
+anchorjs: true                          # if you want to customize anchor. check out line:181 of `post.html`
+
+
+
+# Gems
+# from PR#40, to support local preview for Jekyll 3.0
+gems: [jekyll-paginate]
+
+
+
+
+# Markdown settings
+# replace redcarpet to kramdown,
+# although redcarpet can auto highlight code, the lack of header-id make the catalog impossible, so I switch to kramdown
+# document: http://jekyllrb.com/docs/configuration/#kramdown
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM                            # use Github Flavored Markdown !important
+
+
+
+
+# 评论系统
+# Gitalk
+gitalk:
+  enable: true    #是否开启Gitalk评论
+  clientID: f6f79814a323ade1738b                            #生成的clientID
+  clientSecret: c7732dad1ba370ce8f173ac1fba1a5716219cbbb    #生成的clientSecret
+  repo: LiuLilyLily.github.io    #仓库名称
+  owner: LiuLilyLily    #github用户名
+  admin: LiuLilyLily
+  distractionFreeMode: true #是否启用类似FB的阴影遮罩
+
+
+
+
+
+
+# Featured Tags
+featured-tags: true                     # 是否使用首页标签
+featured-condition-size: 1              # 相同标签数量大于这个数，才会出现在首页
+
+
+
+# Progressive Web Apps
+chrome-tab-theme-color: "#000000"
+service-worker: true
+
+
+
+# Friends
+friends: [
+    {
+        title: "pplong",
+        href: "https://yunlongs.cn/"
+    },{
+        
+    }
+]

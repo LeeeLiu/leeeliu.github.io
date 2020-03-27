@@ -17,6 +17,7 @@ tags:
 
 ### part 1 前置知识：token、sample
 > ppt 1 ~ 15
+
 1. ASR要识别的token
     - 音素（phoneme，比如音标）：缺点是需要lexicon。
     - 手写单位（grapheme，比如字母+标点符号）：优点是不需要lexicon，可以拼写出训练集以外的单词。

@@ -16,8 +16,7 @@ tags:
 课件(http://speech.ee.ntu.edu.tw/~tlkagk/courses/DLHLP20/ASR%20(v12).pdf)
 
 ### part 1 前置知识：token、sample
-> ppt 1 ~ 15
-
+- ppt 1 ~ 15
 1. ASR要识别的token
     - 音素（phoneme，比如音标）：缺点是需要lexicon。
     - 手写单位（grapheme，比如字母+标点符号）：优点是不需要lexicon，可以拼写出训练集以外的单词。
@@ -45,7 +44,7 @@ tags:
 6. 应用：key-word spotting。找出语音中的关键词，又称作关键词唤醒。比如你对ASR提问题，必须先说出Siri这个名字，才会得到回应。一般想法是，让ASR持续倾听人的声音，这样模型就太庞大。所以，不仅仅有准确率，还要模型压缩足够小。而且，要考虑一些安全问题，比如[小孩的声音，主播的声音，意外激活了各家的Amazons-Alexa订下娃娃屋](https://www.phonearena.com/news/Amazons-Alexa-hears-anchorman-report-story-puts-in-orders-for-dollhouses_id89773)
 
 ### part2：seq2seq模型之LAS（listen，attend，spell）
-> ppt 16  ~ 49
+- ppt 16  ~ 49
 1. listen （encoder）
     - 目的：提取高层语义信息，去除噪声。
     - 方式：一个encoder，输入是声学特征x，输出一样长的表示h。
@@ -85,7 +84,7 @@ online语音辩识。LAS必须听完整个句子才能输出第一个token。
 
 
 ### part 3：其他一些seq2seq模型
-> ppt 50 ~ end
+- ppt 50 ~ end
 1. CTC模型    
     - 特点
         * 只有encoder（2006年出的 用在TIMIT）
@@ -94,7 +93,8 @@ online语音辩识。LAS必须听完整个句子才能输出第一个token。
         * 每个声音信号x只有25ms，信息量很小。如果暂时无法决定它是什么，则输出的token空集符号“喏”。也许，在看到下一个acoustic feature的时候，就知道输出什么了。
         * 忽略下采样，假设输入T个声学特征，输出T个token。输出序列包括空集符号，以及重复的token。把它们merge起来。
     - 怎么训练？
-    问题是，我们不知道输出的ground truth是什么。比如，输出token有四个，现在标注是“好棒”，“好”放在哪里，“棒”放在哪里，空集符号“喏”又放在哪里？**（LAS也有这个问题吗？猜测：因为LAS是有attention的，每个输出都是根据每一个输入算出来，不会存在“不知道输出什么token”的问题。理解粗浅，欢迎批评指正。）**
+    问题是，我们不知道输出的ground truth是什么。比如，输出token有四个，现在标注是“好棒”，“好”放在哪里，“棒”放在哪里，空集符号“喏”又放在哪里？
+      * `plus：LAS也有这个问题吗？猜测：因为LAS是有attention的，每个输出都是根据每一个输入算出来，不会存在“不知道输出什么token”的问题。理解粗浅，欢迎批评指正。`
       * token是远小于输入acoustic feature的。怎么办？-->自己制造label。alignment（对齐）方式有很多，选择哪一个？——> 穷举所有的方式。
 
     - CTC效果怎么样？CTC（只有encoder）错误率30% …  比LAS（encoder+decoder）差远了

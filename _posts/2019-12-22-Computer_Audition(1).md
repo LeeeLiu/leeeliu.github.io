@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      计算机听觉(持续更新)
+title:      计算机听觉
 subtitle:   知识点（1）
 date:       2019-12-22
 author:     LT

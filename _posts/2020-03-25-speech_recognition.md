@@ -8,7 +8,7 @@ header-img:
 catalog: true
 tags:
     - 语音识别
-    - 深度学习
+    - computer audition
 ---
 
 >内容来自

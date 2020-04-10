@@ -23,13 +23,13 @@ $$θ^{*} = arg  \max_{θ} \sum_{i=1}^{m} \log P_{G}(x^{i};θ) $$
 $$θ^{*} ≈ arg  \max_{θ} E_{x \sim P_{data}} [log P_{G}(x^{i};θ)] $$
 4. 在3式上加一个$P_{data}$有关的项(反正不影响)。此时，我们发现，**MLE等价于最小化$P_{data}$和$P_{G}$的KL-divergence**。
 $$θ^{*} = arg \min_{θ} KL(P_{data} || P_{G}) $$
-5. 按照这个思路，MLE **-->** $\min_{θ} KL(P_{data} || P_{G})$ **-->** 最小化其它的Div(比如JS-Div) **-->** GAN的generator
-6. $P_{data}$和$P_{G}$都未知，只能从这两种分布里sample。那么怎样衡量它们之间的divergence？答案是，借助discriminator。所以，GAN是以`间接`方式最小化Div的。[了解更多](./2019-05-27-GAN.md)
+5. 按照这个思路，MLE --> $\min_{θ} KL(P_{data} || P_{G})$ --> 最小化其它的Div(比如JS-Div) --> GAN的generator
+6. $P_{data}$和$P_{G}$都未知，只能从这两种分布里sample。那么怎样衡量它们之间的divergence？答案是，借助discriminator。所以，GAN是以`间接`方式最小化Div的。[了解更多](https://leeeliu.github.io/2019/05/27/GAN/)
 ### 三，MLE应用于flow的目标函数优化(直接)
 3. 在2式上加一个负号。
 $$θ^{*} = arg  \min_{θ} [- \sum_{i=1}^{m} \log P_{G}(x^{i};θ)] $$
 4. 式3就是flow模型要优化的目标，而且是`直接`方式。未知参数有两个。其中，$P_{G}$可以构造成已知的。所以未知参数只剩θ了。
 
 ## （2）GAN/flow优缺点小结
-1. GAN的问题是，训练稳定性差。[了解更多](./2019-05-27-GAN.md)
+1. GAN的问题是，训练稳定性差。[了解更多](https://leeeliu.github.io/2019/05/27/GAN/)
 2. flow的优点是，解释直观，训练不会坏掉。缺点是，耗费资源。

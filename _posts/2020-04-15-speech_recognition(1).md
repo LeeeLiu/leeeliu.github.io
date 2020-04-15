@@ -65,6 +65,7 @@ tags:
          + content-encoder没法直接换成一个完整的ASR（输出是文字不是latent，decoder那边没法用），可以用ASR中seq2seq里的encoder部分，输出是token序列的概率的那种。
          + 还有一个办法是，在content-encoder里加instance normalization（减掉均值，除以方差），从而去掉和说话人有关的信息，只关注说话内容。PS，在decoder那边就要加adaptive instance normalization，从而把speaker相关的信息加进来。
       * 直接转换
+
 ### 三，voice conversion（续）      
 1. 对于处理非平行数据的特征分离方法，存在的问题和方法：
    - 问题：训练（content-encoder和speaker-encoder吃的是`同一个`语者的声音）和测试（content-encoder和speaker-encoder吃的是`不同`语者的声音）不一样导致转换后的语音音质差。

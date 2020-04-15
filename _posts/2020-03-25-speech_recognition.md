@@ -12,8 +12,8 @@ tags:
 ---
 
 >内容来自
-视频(https://www.bilibili.com/video/BV1QE411p7z3)
-课件(http://speech.ee.ntu.edu.tw/~tlkagk/courses/DLHLP20/ASR%20(v12).pdf)
+>>视频(https://www.bilibili.com/video/BV1QE411p7z3)
+>>课件(http://speech.ee.ntu.edu.tw/~tlkagk/courses/DLHLP20/ASR%20(v12).pdf)
 
 ### part 1 前置知识：token、sample
 - ppt 1 ~ 15
@@ -49,7 +49,7 @@ tags:
     - 目的：提取高层语义信息，去除噪声。
     - 方式：一个encoder，输入是声学特征x，输出一样长的表示h。
     - Encoder内部，可以是RNN，也可以是1-D的CNN。 高层的filter可以考虑更长的序列，甚至整个输入序列。实际研究工作中，CNN + RNN是常用方式。
-    - encoder里面的self-attention layer，输出的每个h都能够考虑所有的x。
+    - encoder里面的[self-attention layer](https://www.bilibili.com/video/BV14J411W7hw?p=60)，输出的每个h都能够考虑所有的x。
     - 下采样：Pyramid RNN、Pooling over time、Time-delay DNN（带洞卷积也是这个概念）、Attention in a range。
 2. attend
 （1）关键字Z0和encoder的`每一个输出h`做attention，就像web搜索。

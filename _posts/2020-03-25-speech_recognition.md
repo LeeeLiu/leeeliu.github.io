@@ -14,9 +14,9 @@ tags:
 >内容来自
 >>视频(https://www.bilibili.com/video/BV1QE411p7z3)
 >>课件(http://speech.ee.ntu.edu.tw/~tlkagk/courses/DLHLP20/ASR%20(v12).pdf)
+>>>PPT 1~15(part1), 16~49(part2), 50~end(part3)
 
-### part 1 前置知识：token、sample
->ppt 1 ~ 15
+### part1 前置知识：token、sample
 1. ASR要识别的token
     - 音素（phoneme，比如音标）：缺点是需要lexicon。
     - 手写单位（grapheme，比如字母+标点符号）：优点是不需要lexicon，可以拼写出训练集以外的单词。
@@ -44,7 +44,6 @@ tags:
 6. 应用：key-word spotting。找出语音中的关键词，又称作关键词唤醒。比如你对ASR提问题，必须先说出Siri这个名字，才会得到回应。一般想法是，让ASR持续倾听人的声音，这样模型就太庞大。所以，不仅仅有准确率，还要模型压缩足够小。而且，要考虑一些安全问题，比如[小孩的声音，主播的声音，意外激活了各家的Amazons-Alexa订下娃娃屋](https://www.phonearena.com/news/Amazons-Alexa-hears-anchorman-report-story-puts-in-orders-for-dollhouses_id89773)
 
 ### part2：seq2seq模型之LAS（listen，attend，spell）
-- ppt 16  ~ 49
 1. listen （encoder）
     - 目的：提取高层语义信息，去除噪声。
     - 方式：一个encoder，输入是声学特征x，输出一样长的表示h。
@@ -83,8 +82,7 @@ softmax，输出C0。
 online语音辩识。LAS必须听完整个句子才能输出第一个token。
 
 
-### part 3：其他一些seq2seq模型
-- ppt 50 ~ end
+### part3：其他一些seq2seq模型
 1. CTC模型    
     - 特点
         * 只有encoder（2006年出的 用在TIMIT）

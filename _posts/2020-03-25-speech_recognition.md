@@ -13,8 +13,8 @@ tags:
 ---
 
 >内容来自
->>视频(https://www.bilibili.com/video/BV1QE411p7z3)
->>课件(http://speech.ee.ntu.edu.tw/~tlkagk/courses/DLHLP20/ASR%20(v12).pdf)
+>>[视频](https://www.bilibili.com/video/BV1QE411p7z3)
+>>[课件](http://speech.ee.ntu.edu.tw/~tlkagk/courses/DLHLP20/ASR%20(v12).pdf)
 >>>PPT 1~15(part1), 16~49(part2), 50~end(part3)
 
 ### part1 前置知识：token、sample

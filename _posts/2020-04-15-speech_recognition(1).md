@@ -12,9 +12,9 @@ tags:
 ---
 
 >内容来自
->>视频(https://www.bilibili.com/video/BV1QE411p7z3?p=8)
->>课件1(http://speech.ee.ntu.edu.tw/~tlkagk/courses/DLHLP20/ASR3.pdf)
->>课件2(http://speech.ee.ntu.edu.tw/~tlkagk/courses/DLHLP20/Voice%20Conversion%20(v3).pdf)
+>>[视频](https://www.bilibili.com/video/BV1QE411p7z3?p=8)
+>>[课件1](http://speech.ee.ntu.edu.tw/~tlkagk/courses/DLHLP20/ASR3.pdf)
+>>[课件2](http://speech.ee.ntu.edu.tw/~tlkagk/courses/DLHLP20/Voice%20Conversion%20(v3).pdf)
 
 ### 一，Language model
  1. 在语音识别里，为什么要Language model(LM)？

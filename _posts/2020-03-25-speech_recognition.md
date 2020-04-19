@@ -9,6 +9,7 @@ catalog: true
 tags:
     - 语音识别
     - computer audition
+    - seq2seq
 ---
 
 >内容来自

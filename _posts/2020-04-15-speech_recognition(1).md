@@ -70,7 +70,7 @@ tags:
 1. 对于处理非平行数据的特征分离方法，存在的问题和方法：
    - 问题：训练（content-encoder和speaker-encoder吃的是`同一个`语者的声音）和测试（content-encoder和speaker-encoder吃的是`不同`语者的声音）不一样导致转换后的语音音质差。
    - 方法1（行不通）：如果在训练阶段，让content-encoder和speaker-encoder吃的是`不同`语者的声音，但是我不知道ground truth，没有训练目标了（因为是非平行数据），这个方法行不通。
-   - 方法2：2nd Stage Training。在decoder后面接discriminator D和speaker classifier。进一步，额外train一个和decoder吃相同输入的补丁网络patcher（因为它觉得decode出来的语音质量可能不太好），patcher的输出钉在decoder的输出上，再喂给D。
+   - 方法2：2nd Stage Training。在decoder后面接discriminator D（作用是判断real or generated，是否像个正常人说话的声音）和speaker classifier（原有的方法中，这个就当作D）。进一步，额外train一个和decoder吃相同输入的补丁网络patcher（因为它觉得decode出来的语音质量可能不太好），patcher的输出钉在decoder的输出上，再喂给D。
 2. 对于处理非平行数据，还有直接转换的方法
    - cycle-GAN
       * GAN的思路：`语者A的speech X👉（generator G）语者B的speech Y`，Discriminator D判断Y是否属于语者B。（训练集里有除了Y以外的B的多种说话内容的声音）

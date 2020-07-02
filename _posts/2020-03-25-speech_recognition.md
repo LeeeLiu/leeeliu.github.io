@@ -10,6 +10,7 @@ tags:
     - 语音识别
     - computer audition
     - seq2seq
+    - 理论篇
 ---
 
 >内容来自

@@ -8,8 +8,7 @@ header-img:
 catalog: true
 tags:
     - GAN
-    - Steganography
-    - 载体合成
+    - 论文笔记
 ---
 
 

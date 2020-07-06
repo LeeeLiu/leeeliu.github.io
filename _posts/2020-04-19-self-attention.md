@@ -7,8 +7,8 @@ author:     LT
 header-img: 
 catalog: true
 tags:
-    - seq2seq
-    - 
+    - 深度学习
+    - 理论篇
 ---
 
 >内容来自

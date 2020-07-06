@@ -7,8 +7,10 @@ author:     LT
 header-img: 
 catalog: true
 tags:
+    - 深度学习
     - 语音识别
     - computer audition
+    - 理论篇
 ---
 
 >内容来自

@@ -7,10 +7,10 @@ author:     LT
 header-img: 
 catalog: true
 tags:
-    - MLE
+    - 深度学习
     - GAN
     - flow
-    - 论文笔记
+    - 理论篇
 ---
 
 ### 一，GAN/flow优化目标的区别

@@ -7,9 +7,9 @@ author:     LT
 header-img: 
 catalog: true
 tags:
+    - 深度学习
     - 语音识别
     - computer audition
-    - seq2seq
     - 理论篇
 ---
 

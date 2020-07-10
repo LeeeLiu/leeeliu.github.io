@@ -7,7 +7,7 @@ author:     LT
 header-img: 
 catalog: true
 tags:
-    - computer audition
+    - 计算机听觉
     - 
 ---
 

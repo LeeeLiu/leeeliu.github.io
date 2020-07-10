@@ -9,7 +9,7 @@ catalog: true
 tags:
     - 深度学习
     - 语音识别
-    - computer audition
+    - 计算机听觉
     - 理论篇
 ---
 

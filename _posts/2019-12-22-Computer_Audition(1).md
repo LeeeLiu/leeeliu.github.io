@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      计算机听觉
-subtitle:   知识点（1）
+title:      信号处理基础知识
+subtitle:    DSP
 date:       2019-12-22
 author:     LT
 header-img: 

@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      C艹 primer 第六版 笔记(1)
+title:      C++ primer 第六版 笔记（一）
 subtitle:   第一、二、三章
 date:       2020-08-17
 author:     LT
@@ -12,7 +12,7 @@ tags:
 ---
 
 
-### 第一,二章 概述
+### 第一、二章 概述
 1. 编译C++程序时，编译器自动定义了一个预处理器名字__cplusplus，因此，我们可以根据它来判断该程序是否是C++程序，以便有条件地包含一些代码。例如：
 	``` 
 	 #ifdef __cplusplus 

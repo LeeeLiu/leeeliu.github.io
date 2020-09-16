@@ -2,7 +2,7 @@
 layout:     post
 title:      C primer 第六版 笔记（一）
 subtitle:   第一、二、三章
-date:       2020-08-17
+date:       2020-08-15
 author:     LT
 header-img: 
 catalog: true

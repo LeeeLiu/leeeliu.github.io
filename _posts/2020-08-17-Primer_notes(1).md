@@ -1,14 +1,14 @@
 ---
 layout:     post
-title:      C++ primer 第六版 笔记(1)
+title:      C艹 primer 第六版 笔记(1)
 subtitle:   第一、二、三章
 date:       2020-08-17
 author:     LT
 header-img: 
 catalog: true
 tags:
-		- C++
-		- C++Primer
+	- C++
+	- C++Primer
 ---
 
 

@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      C primer 第六版 笔记（一）
+title:      C++ primer 第六版 笔记（一）
 subtitle:   第一、二、三章
 date:       2020-08-15
 author:     LT

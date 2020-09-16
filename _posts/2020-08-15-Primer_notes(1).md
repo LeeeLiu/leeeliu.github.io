@@ -7,8 +7,8 @@ author:     LT
 header-img: 
 catalog: true
 tags:
-	- C++
-	
+    - C++
+    - 
 ---
 
 
@@ -135,3 +135,4 @@ tags:
 			- `ri = ri2;`
 			- 改变的是 ival 而不是引用本身。赋值之后，两个引用仍然指向原来的对象
 8. 			
+

@@ -3,7 +3,7 @@ title: LT's Blog
 SEOTitle: Hello | LT's Blog
 header-img: img/me.jpg
 email: lily516@foxmail.com
-description: "向死而生。"
+description: "搬砖中"
 keyword: "LT,blog"
 url: "https://LeeeLiu.github.io/"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
@@ -11,7 +11,7 @@ github_repo: "https://github.com/LeeeLiu/LeeeLiu.github.io.git" # you code repos
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "Live towards death"
+sidebar-about-description: "搬砖中"
 sidebar-avatar: /img/lion.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
